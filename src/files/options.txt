@@ -1,0 +1,12 @@
+emojis:on
+northStopNbId:12002
+northStopSbId:11980
+southStopNbId:11958
+southStopSbId:11958
+northHeader:BALTIMORE PENN STATION
+southHeader:DC UNION STATION
+northEmoji:🦀
+southEmoji:🏛
+
+#The following only changes the live url
+line:marc-penn
