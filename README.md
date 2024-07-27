@@ -46,7 +46,7 @@ then
 Drag `trains.sh` into this folder.
 
 Next, if you are running zsh then enter
-`nano ~/.zshrc~`
+`nano ~/.zshrc`
 If bash then
 `nano ~/.bash_profile`
 If you're not sure just do both.
