@@ -32,15 +32,24 @@ NOTE: I have only tested this with the MARC-Penn line between Union Station and 
 
 ## Quick Install (Mac)
 
-FYou will need `java 22`. To determine your java version, open up your Terminal and enter `java --version`. Update [here](https://www.oracle.com/java/technologies/downloads/).
+### Preliminaries
 
-Test run: in Terminal type
+You will need `java 22`. To determine your java version, open up your Terminal and enter `java --version`. Update [here](https://www.oracle.com/java/technologies/downloads/).
+
+### Test run:
+
+Open Terminal and type
 
 `chmod +x `
 
 Drag `run.sh` into the window, then hit enter. Then open `run.sh` with Terminal.
 
-I find this program most useful if I can just type something like `trains tomorrow` or `trains friday` without having to find the file each time.
+### Run normally
+`java Trains <args>`
+
+### Shortcus
+
+I find this program most useful if I can just type something like `trains tomorrow` or `trains friday` in Terminal.
 
 To set this up:
 Open `trains.sh` in a text editor, and change the following line:
