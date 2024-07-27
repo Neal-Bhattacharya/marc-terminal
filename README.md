@@ -32,9 +32,9 @@ NOTE: I have only tested this with the MARC-Penn line between Union Station and 
 
 ## Quick Install (Mac)
 
-FIRST: You will need `java 22`. To determine your java version, open up your Terminal and enter `java --version`. Update [here](https://www.oracle.com/java/technologies/downloads/).
+FYou will need `java 22`. To determine your java version, open up your Terminal and enter `java --version`. Update [here](https://www.oracle.com/java/technologies/downloads/).
 
-Test it out: in Terminal type
+Test run: in Terminal type
 
 `chmod +x `
 
