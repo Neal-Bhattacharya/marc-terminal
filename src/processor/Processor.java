@@ -5,8 +5,6 @@ import ui.CommandLineUI;
 import util.*;
 
 import java.io.IOException;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
 import java.time.*;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
@@ -16,7 +14,7 @@ import java.util.function.Predicate;
 import static java.util.Comparator.comparing;
 
 public class Processor {
-    private GTFSFileReader gtReader;
+    private final GTFSFileReader gtReader;
     private Map<String, Set<DayOfWeek>> weeks;
     private Map<String, Set<Holiday>> holidays;
     private List<Route> routes;
@@ -27,10 +25,6 @@ public class Processor {
     private LocalDate today = now.toLocalDate();
     private LocalTime timeNow = now.toLocalTime();
 
-    /**
-     * Trips that haven't been populated by the other fields the readers extracted
-     */
-    private List<Trip> rawTrips;
     private final Map<String, Trip> tripIdMap = new HashMap<>();
     private List<Trip> trips;
 
@@ -165,9 +159,10 @@ public class Processor {
         DateTimeFormatter df = DateTimeFormatter.ofPattern("yyyyMMdd");
         LocalDate end = LocalDate.parse(endDate, df);
         if  (now.isAfter(end.atStartOfDay())){
-            System.out.println("DATA IS EXPIRED.\n" +
-                    "Download new marc train data from www.mta.maryland.gov/developer-resources\n"+
-                    "And unzip into src/data folder");
+            System.out.println("""
+                    DATA IS EXPIRED.
+                    Download new marc train data from www.mta.maryland.gov/developer-resources
+                    And unzip into src/data folder""");
             System.exit(0);
         }
     }
@@ -178,7 +173,7 @@ public class Processor {
         this.routes = gtReader.getRoutes();
         this.stopTimes = gtReader.getStopTimes();
         this.stopNames = gtReader.getStopNames();
-        this.rawTrips = gtReader.getTrips();
+        List<Trip> rawTrips = gtReader.getTrips();
 
         // Populate tripIdMap
         rawTrips.forEach(t->tripIdMap.put(t.getTripId(), t));
@@ -263,11 +258,11 @@ public class Processor {
                 .map(StopTime::getDepartureStr).toList();
     } */
 
-    public boolean timeAfterNow(StopTime st){
+    public boolean timeBeforeNow(StopTime st){
         Calendar locCalendar = Calendar.getInstance();
         locCalendar.setTime(st.getDepartureTime());
         double now = timeNow.getHour() + ((double) timeNow.getMinute() / 60);
-        return locCalendar.get(Calendar.HOUR_OF_DAY) + ((double) locCalendar.get(Calendar.MINUTE) / 60) > now;
+        return !(locCalendar.get(Calendar.HOUR_OF_DAY) + ((double) locCalendar.get(Calendar.MINUTE) / 60) > now);
     }
 
     public boolean trainRunsToday(Trip t){
@@ -319,7 +314,7 @@ public class Processor {
         return treeMap;
     }
 
-    public static String generateHourDiffString(StopTime origin, StopTime dest){DateFormat hourFormat = new SimpleDateFormat("h\\hm\\m");
+    public static String generateHourDiffString(StopTime origin, StopTime dest){
         Date originDate = origin.getDepartureTime();
         Date destDate = dest.getArrivalTime();
         calendar.setTime(originDate);
@@ -350,7 +345,7 @@ public class Processor {
         //urlBldr.append("20241128").append('&');
         urlBldr.append(df.format(now)).append('&');
         urlBldr.append("direction=").append(direction ? '1' : '0').append('&');
-        urlBldr.append("origin=").append(direction ? primarySouthStopNbId : primaryNorthStopSbId).append('&');;
+        urlBldr.append("origin=").append(direction ? primarySouthStopNbId : primaryNorthStopSbId).append('&');
         urlBldr.append("destination=").append(direction ? primaryNorthStopNbId : primarySouthStopSbId);
         urlBldr.append("&show_all=yes");
 

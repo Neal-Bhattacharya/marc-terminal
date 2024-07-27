@@ -1,18 +1,11 @@
 package ui;
 
-import jdk.jshell.spi.ExecutionControl;
 import processor.Processor;
 import util.StopTime;
 
 import java.awt.*;
 import java.net.URI;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.time.Duration;
 import java.util.*;
-import java.util.List;
-
-import static java.util.Comparator.comparing;
 
 public class CommandLineUI {
 
@@ -25,7 +18,6 @@ public class CommandLineUI {
     public static final String ANSI_PURPLE = "\u001B[35m";
     public static final String ANSI_CYAN = "\u001B[36m";
     public static final String ANSI_WHITE = "\u001B[37m";
-    public static final String SPACES = "";
 
     private static Processor processor = null;
     private static boolean icons = true;
@@ -53,7 +45,7 @@ public class CommandLineUI {
             System.out.println("Open train times in your browser? [y/n]");
             Scanner scanner = new Scanner(System.in);
             System.out.print(">");
-            String input = scanner.nextLine();;
+            String input = scanner.nextLine();
             if (input.trim().equalsIgnoreCase("y")){
                 launchURLs();
             }
@@ -75,9 +67,8 @@ public class CommandLineUI {
     }
 
     private static void printHolidayAlert(){
-        StringBuilder text =  new StringBuilder();
-        text.append(ANSI_YELLOW).append("ALERT:").append(ANSI_RESET).append(" It's a holiday. ")
-                .append("Times may be wrong!");
+        String text = ANSI_YELLOW + "ALERT:" + ANSI_RESET + " It's a holiday. " +
+                "Times may be wrong!";
         StringBuilder alert = new StringBuilder("-".repeat(42)).append('\n').append(text);
         System.out.println(new String(alert));
     }
@@ -113,18 +104,18 @@ public class CommandLineUI {
         if (times == null || times.isEmpty()){
             System.out.println(ANSI_CYAN + "No more trains today." + ANSI_RESET);
             return;
-        };
+        }
         Iterator<Map.Entry<StopTime, StopTime>> it = times.entrySet().iterator();
         Map.Entry<StopTime, StopTime> nextTrain = it.next();
 
-        if (!processor.timeAfterNow(nextTrain.getKey()) && !it.hasNext()){
+        if (processor.timeBeforeNow(nextTrain.getKey()) && !it.hasNext()){
             System.out.println(ANSI_CYAN + "No more trains today." + ANSI_RESET);
             return;
         }
 
-        while (!processor.timeAfterNow(nextTrain.getKey())){
+        while (processor.timeBeforeNow(nextTrain.getKey())){
             nextTrain = it.next();
-            if (!processor.timeAfterNow(nextTrain.getKey()) && !it.hasNext()){
+            if (processor.timeBeforeNow(nextTrain.getKey()) && !it.hasNext()){
                 System.out.println("No more trains today.");
                 return;
             }

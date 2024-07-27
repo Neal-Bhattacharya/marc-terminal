@@ -4,7 +4,6 @@ import util.*;
 
 import java.io.IOException;
 import java.nio.file.FileSystems;
-import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.time.DayOfWeek;
 import java.util.*;
@@ -21,7 +20,7 @@ public class GTFSFileReader {
     }
 
 
-    public Map<String, String> getOptions() throws IOException {
+    public Map<String, String> getOptions() {
         Map<String, String> map = new HashMap<>();
         try {
             CSVReader reader = new CSVReader(path + "options.txt");

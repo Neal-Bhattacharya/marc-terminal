@@ -83,10 +83,6 @@ public class Trip{
         return serviceId;
     }
 
-    public String getHeadSign() {
-        return headSign;
-    }
-
     public boolean isNorthBound() {
         return direction;
     }
@@ -105,10 +101,6 @@ public class Trip{
         this.activeDays.addAll(activeDays);
     }
 
-    public Route getRoute() {
-        return route;
-    }
-
     public void setRoute(Route route) {
         this.route = route;
     }
@@ -121,20 +113,12 @@ public class Trip{
         this.stopTimes = schedules;
     }
 
-    public Set<Holiday> getHolidays() {
-        return holidays;
-    }
-
     public void setHolidays(Set<Holiday> holidays) {
         this.holidays = holidays;
     }
 
     public int getHolidayStatus() {
         return holidayStatus;
-    }
-
-    public void setHolidayStatus(int holidayStatus) {
-        this.holidayStatus = holidayStatus;
     }
 
     public boolean determineHolidayStatus(LocalDate today){

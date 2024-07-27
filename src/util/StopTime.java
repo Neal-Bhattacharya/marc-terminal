@@ -7,7 +7,7 @@ import java.util.Date;
 
 public class StopTime {
 
-    private String stopId;
+    private final String stopId;
     private String arrivalStr;
     private String departureStr;
 
@@ -43,24 +43,12 @@ public class StopTime {
         return stopId;
     }
 
-    public void setStopId(String stopId) {
-        this.stopId = stopId;
-    }
-
     public String getArrivalStr() {
         return arrivalStr;
     }
 
-    public void setArrivalStr(String arrivalStr) {
-        this.arrivalStr = arrivalStr;
-    }
-
     public String getDepartureStr() {
         return departureStr;
-    }
-
-    public void setDepartureStr(String departureStr) {
-        this.departureStr = departureStr;
     }
 
     public String getStopName() {
@@ -79,24 +67,8 @@ public class StopTime {
     public Date getArrivalTime() { return this.arrivalTime;
     }
 
-    public void setArrivalTime(Date arrivalTime){
-        this.arrivalTime = arrivalTime;
-    }
     public Date getDepartureTime() {
         return departureTime;
     }
-
-    public void setDepartureTime(Date departureTime) {
-        this.departureTime = departureTime;
-    }
-
-    public Integer getSequenceNum() {
-        return sequenceNum;
-    }
-
-    public void setSequenceNum(Integer sequenceNum) {
-        this.sequenceNum = sequenceNum;
-    }
-
 
 }
