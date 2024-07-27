@@ -53,6 +53,7 @@ I find this program most useful if I can just type something like `trains tomorr
 
 To set this up:
 Open `trains.sh` in a text editor, and change the following line:
+
 ```cd ~/Downloads/marc-terminal-main/src```
 
 Edit what comes after `cd` to wherever the src folder is stored (`Cmd+option+C`to copy the file path in mac).
