@@ -21,7 +21,7 @@ Launching the main application loads the upcoming trains today:
  04:05 PM----1h------>05:05 PM
  06:00 PM----1h5m---->07:05 PM
 ```
-You can also pass `tmr` (or `tomorrow`), `<weekday>`, or `7/27` as arguments to see the trains on that day.
+You can also pass `tmr` (or `tomorrow`), `<weekday>`, or `mm/dd` as arguments to see the trains on that day.
 
 To open up the mta's live schedules, you can pass `live` or for example `saturday live`.
 
