@@ -73,7 +73,9 @@ Enter
 
 `chmod +x /usr/local/bin/trains.sh`
 
-Next, if you are running zsh then enter
+The final step depends on if you're running zsh or bash as your Terminal shell. If you don't know what this means just do both.
+
+If zsh then enter
 
 `nano ~/.zshrc`
 
@@ -81,9 +83,7 @@ If bash then
 
 `nano ~/.bash_profile`
 
-If you're not sure just do both.
-
-In the editor, add the line 
+This will launch a text editor. Add the line 
 `alias trains=/usr/local/bin/trains.sh`
 
-to the end, save and quit. Restart Terminal. Done!
+to the end, save with `Control+X`. Restart Terminal. Done!
