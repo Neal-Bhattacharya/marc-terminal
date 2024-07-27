@@ -39,7 +39,7 @@ I find this program most useful if I can just type something like `trains tomorr
 To set this up, open `trains.sh` in a text editor, and change the following line:
 ```cd ~/marc-main/src```
 
-Edit what comes after `cd` to wherever the src folder is stored (`Cmd+option_C`to copy the file path in mac).
+Edit what comes after `cd` to wherever the src folder is stored (`Cmd+option+C`to copy the file path in mac).
 
 You won't have to do this if you unzipped into your user folder ("JohnSmith").
 
