@@ -47,8 +47,11 @@ You won't have to do this if you unzipped into your user folder ("JohnSmith").
 
 Next, in Terminal enter,
 `cd /usr/local/bin`
+
 then
+
 `open .`
+
 Drag `trains.sh` into this folder.
 
 Next, if you are running zsh then enter
