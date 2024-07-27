@@ -40,7 +40,7 @@ You will need `java 22`. To determine your java version, open up your Terminal a
 
 Open Terminal and type
 
-`chmod +x `
+`chmod +x ` with the space
 
 Drag `run.sh` into the window, then hit enter. Then open `run.sh` with Terminal.
 
