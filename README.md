@@ -30,7 +30,7 @@ To customize stops, emojis, and header, edit options.txt in the files folder.
 
 **NOTE:** I have only tested this with the MARC-Penn line between Union Station and Penn Station. I am not liable for any consequences of a missed train on account of using this program. Please don't sue me if you miss your cousin's wedding.
 
-## Quick Install (Mac)
+## Quick Install (Mac/Unix)
 
 ### Preliminaries
 
