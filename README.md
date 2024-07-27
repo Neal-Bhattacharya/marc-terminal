@@ -27,13 +27,17 @@ To open up the mta's live schedules, you can pass `live` or for example `saturda
 
 To customize stops, emojis, and header, edit options.txt in the files folder.
 
-To test it out, open `run.sh` or (`run.bat` on Windows).
-
 NOTE: I have only tested this with the MARC-Penn line between Union Station and Penn Station. I am not liable for any consequences of a missed train on account of using this program. Please don't sue me if you miss your son's wedding.
 
-## Quick Install (Mac/Unix)
+## Quick Install (Mac)
 
 FIRST: You will need `java 22`. To determine your java version, open up your Terminal and enter `java --version`. Update [here](https://www.oracle.com/java/technologies/downloads/).
+
+Test it out: in Terminal type
+
+`chmod +x `
+
+Drag `run.sh` into the window, then hit enter. Then open `run.sh` with Terminal.
 
 I find this program most useful if I can just type something like `trains tomorrow` or `trains friday` without having to find the file each time.
 
