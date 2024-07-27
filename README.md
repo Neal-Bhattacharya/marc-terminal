@@ -27,7 +27,7 @@ To open up the mta's live schedules, you can pass `live` or for example `saturda
 
 To customize stops, emojis, and header, edit options.txt in the files folder.
 
-To test it out, open `run.sh` or `run.bat` on Windows.
+To test it out, open `run.sh` or (`run.bat` on Windows).
 
 NOTE: I have only tested this with the MARC-Penn line between Union Station and Penn Station. I am not liable for any consequences of a missed train on account of using this program. Please don't sue me if you miss your son's wedding.
 
@@ -38,7 +38,11 @@ I find this program most useful if I can just type something like `trains tomorr
 
 To set this up, open `trains.sh` in a text editor, and change the following line:
 ```cd ~/marc-main/src```
-Change what comes after `cd` to wherever the src folder is stored. You won't have to do this if you unzipped into your user folder ("JohnSmith").
+
+Edit what comes after `cd` to wherever the src folder is stored (`Cmd+option_C`to copy the file path in mac).
+
+You won't have to do this if you unzipped into your user folder ("JohnSmith").
+
 Next, in Terminal enter,
 `cd /usr/local/bin`
 then
