@@ -46,6 +46,7 @@ Edit what comes after `cd` to wherever the src folder is stored (`Cmd+option+C`t
 You won't have to do this if you unzipped into your user folder ("JohnSmith").
 
 Next, in Terminal enter,
+
 `cd /usr/local/bin`
 
 then
@@ -55,9 +56,16 @@ then
 Drag `trains.sh` into this folder.
 
 Next, if you are running zsh then enter
+
 `nano ~/.zshrc`
+
 If bash then
+
 `nano ~/.bash_profile`
+
 If you're not sure just do both.
 
-Add the line `alias trains=/usr/local/bin/trains.sh` to the end, save and quit. Done!
+In the editor, add the line 
+`alias trains=/usr/local/bin/trains.sh`
+
+to the end, save and quit. Restart Terminal. Done!
