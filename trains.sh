@@ -1,3 +1,3 @@
 #!/bin/bash
-cd ~/marc-main/src
+cd ~/Downloads/marc-terminal-main/src
 java Trains $1 $2
