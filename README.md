@@ -43,11 +43,11 @@ I find this program most useful if I can just type something like `trains tomorr
 
 To set this up:
 Open `trains.sh` in a text editor, and change the following line:
-```cd ~/marc-terminal-main/src```
+```cd ~/Downloads/marc-terminal-main/src```
 
 Edit what comes after `cd` to wherever the src folder is stored (`Cmd+option+C`to copy the file path in mac).
 
-You won't have to do this if you unzipped into your user folder ("JohnSmith").
+You won't have to do this if you unzipped into your Downloads folder and plan to keep this there.
 
 Next, in Terminal enter,
 
@@ -58,6 +58,10 @@ then
 `open .`
 
 Drag `trains.sh` into this folder.
+
+Enter
+
+`chmod +x /usr/local/bin/trains.sh`
 
 Next, if you are running zsh then enter
 
