@@ -24,7 +24,7 @@ Running this without any arguments will print the upcoming trains today:
 ```
 You can also pass `tmr` (or `tomorrow`), `<weekday>`, or `mm/dd` as arguments to see the trains on that day.
 
-To open up the mta's live schedules, you can pass `live` or for example `saturday live`.
+**This is entirely offline.** But to open up the mta's live schedules, you can pass `live` or for example `saturday live`.
 
 To customize stops, emojis, and header, edit options.txt in the files folder.
 
