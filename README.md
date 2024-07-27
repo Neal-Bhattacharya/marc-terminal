@@ -57,7 +57,7 @@ Open `trains.sh` in a text editor, and change the following line:
 
 Edit what comes after `cd` to wherever the src folder is stored (`Cmd+option+C`to copy the file path in mac).
 
-You won't have to do this if you unzipped into your Downloads folder and plan to keep this there.
+You won't have to do the above steps if you unzipped into your Downloads folder and plan to keep this there.
 
 Next, in Terminal enter,
 
