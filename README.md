@@ -29,8 +29,8 @@ To customize stops, emojis, and header, edit options.txt in the files folder.
 
 NOTE: I have only tested this with the MARC-Penn line between Union Station and Penn Station. I am not liable for any consequences of a missed train on account of using this program. Please don't sue me if you miss your son's wedding.
 
-## Quick Install
-You will need `java 22.0.2`. To determine your java version, open up your terminal and enter `java --version`. Update [here](https://www.oracle.com/java/technologies/downloads/).
+## Quick Install (Mac/Unix)
+You will need `java 22`. To determine your java version, open up your Terminal and enter `java --version`. Update [here](https://www.oracle.com/java/technologies/downloads/).
 
 To test it out, open `run.sh` or `run.bat` on windows.
 
