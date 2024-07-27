@@ -1,7 +1,7 @@
 # marc-terminal
 The next MARC trains, on your terminal.
 
-Running it without any arguments will print the upcoming trains today:
+Running this without any arguments will print the upcoming trains today:
 ```
 ======================================
 🦀 TRAINS TO BALTIMORE PENN STATION 🦀
