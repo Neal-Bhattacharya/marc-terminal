@@ -56,7 +56,7 @@ Open `trains.sh` in a text editor, and change the following line:
 
 ```cd ~/Downloads/marc-terminal-main/src```
 
-Edit what comes after `cd` to wherever the src folder is stored (`Cmd+option+C`to copy the file path in mac).
+Edit what comes after `cd` to wherever the src folder is stored (`Cmd+option+c`to copy the file path in mac).
 
 You won't have to do the above steps if you unzipped into your Downloads folder and plan to keep this there.
 
@@ -87,4 +87,4 @@ If bash then
 This will launch a text editor. Add the line 
 `alias trains=/usr/local/bin/trains.sh`
 
-to the end, save with `Control+X`. Restart Terminal. Done!
+to the end, save with `Control+X`. Restart Terminal. Enter `trains` to ensure it works. Done!
