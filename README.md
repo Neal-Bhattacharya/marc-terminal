@@ -102,4 +102,4 @@ The Maryland Transit Adminstration [publishes](https://www.mta.maryland.gov/deve
 On start up, the program parses all the GTFS file afresh, with no caching of any kind. This is computationally wasteful, but since it only takes a few seconds, I wasn't motivated to implement some kind of serialization. However, it shouldn't be a massive undertaking to do so and would improve performance. This could be desired if more resourcing taxing features are added, such as live data.
 
 ### Live Data
-The [MTA](https://www.mta.maryland.gov/developer-resources) also offers real time transit infromation using GTFS-RT. This could be availed of to alert users of delays and schedule changes.
+The [MTA](https://www.mta.maryland.gov/developer-resources) also offers real time transit infromation using GTFS-RT. This could be availed of to alert users of delays and schedule changes. I was originally going to add this but got lazy, and settled with the URL launcher for now.
