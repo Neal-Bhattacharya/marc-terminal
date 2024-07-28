@@ -141,7 +141,8 @@ public class Processor {
 
     private DayOfWeek stringToDayofWeek(String day){
         return switch (day){
-            case "tmr", "tomorrow" -> DayOfWeek.of(today.getDayOfWeek().getValue()+1);
+            case "tmr", "tomorrow" ->
+                dayTomorrow();
             case "monday" -> DayOfWeek.MONDAY;
             case "tuesday" -> DayOfWeek.TUESDAY;
             case "wednesday" -> DayOfWeek.WEDNESDAY;
@@ -152,6 +153,13 @@ public class Processor {
 
             default -> null;
         };
+    }
+
+    private DayOfWeek dayTomorrow(){
+        int tmr = today.getDayOfWeek().getValue() + 1;
+        if (tmr != 8) return DayOfWeek.of(tmr);
+        return DayOfWeek.MONDAY;
+
     }
 
     private void checkEndDate() throws IOException {
