@@ -1,7 +1,11 @@
 # marc-terminal
 The next MARC trains, on your terminal.
 
-Running this without any arguments will print the upcoming trains today:
+This program parses [GTFS](https://gtfs.org/) files to find all the departures and arrivals between two stops.
+
+Although it's designed for the MARC, a commuter train that bridges Baltimore and DC, the code is potentially adaptable to other transit systems.
+
+Running `Trains` without any arguments will print the upcoming trains today:
 ```
 ======================================
 🦀 TRAINS TO BALTIMORE PENN STATION 🦀
@@ -24,7 +28,7 @@ Running this without any arguments will print the upcoming trains today:
 ```
 You can also pass `tmr` (or `tomorrow`), `<weekday>`, or `mm/dd` as arguments to see the trains on that day.
 
-**This is entirely offline.** But to open up the mta's live schedules, you can pass `live` or for example `saturday live`.
+**This runs entirely offline.** But to open up the mta's live schedules, you can pass `live` or for example `saturday live`.
 
 To customize stops, emojis, and header, edit options.txt in the files folder.
 
