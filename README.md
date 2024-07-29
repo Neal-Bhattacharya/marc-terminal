@@ -3,7 +3,7 @@ The next MARC trains, on your terminal.
 
 This program parses [GTFS](https://gtfs.org/) files to find all the departures and arrivals between two stops.
 
-Although it's designed for the MARC -- a commuter train that bridges Baltimore and DC -- the code is potentially adaptable to other transit systems with GTFS support.
+Although it's designed for the MARC -- a commuter train that bridges Baltimore and DC -- the code is potentially adaptable to other transit systems that publish GTFS files.
 
 Running `Trains` without any arguments will print the upcoming trains today:
 ```
