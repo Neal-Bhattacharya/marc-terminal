@@ -3,7 +3,7 @@ The next MARC trains, on your terminal.
 
 This program parses [GTFS](https://gtfs.org/) files to find all the departures and arrivals between two stops.
 
-Although it's designed for the MARC, a commuter train that bridges Baltimore and DC, the code is potentially adaptable to other transit systems with GTFS support.
+Although it's designed for the MARC -- a commuter train that bridges Baltimore and DC -- the code is potentially adaptable to other transit systems with GTFS support.
 
 Running `Trains` without any arguments will print the upcoming trains today:
 ```
@@ -99,7 +99,7 @@ The Maryland Transit Adminstration [publishes](https://www.mta.maryland.gov/deve
 
 ## Areas for improvement
 ### Caching
-On start up, the program parses all the GTFS file afresh, with no caching of any kind. This is computationally wasteful, but since it only takes a few seconds at most, I wasn't motivated to implement some kind of serialization. However, it shouldn't be a massive undertaking to do so and would improve performance. This could be desired if more resourcing taxing features are added, such as live data.
+On start up, the program parses all the GTFS file afresh, with no caching of any kind. This is computationally wasteful, but since it only takes a few seconds at most, I wasn't motivated to implement some kind of serialization. However, it shouldn't be a massive undertaking to do so and would improve performance. This could be desired if more resource taxing features are added, such as live data.
 
 ### Live Data
 The [MTA](https://www.mta.maryland.gov/developer-resources) also offers real time transit infromation using GTFS-RT. This could be availed of to alert users of delays and schedule changes. I was originally going to add this but got lazy, and settled with the URL launcher for now.
