@@ -92,7 +92,7 @@ to the end, save with `Control+X`. Restart Terminal. Enter `trains` to ensure it
 
 ## How it works
 
-The Maryland Transit Adminstration [publishes](https://www.mta.maryland.gov/developer-resources) trains schedules in GTFS format, which standardizes public transit information. This program parses the data, constructs the desired schedules from it, and compares them against the current time and date. That's basically it.
+The Maryland Transit Adminstration [publishes](https://www.mta.maryland.gov/developer-resources) trains schedules in GTFS format, which standardizes public transit information. This program parses the data, constructs the desired schedules from it, and compares them against the current (or specified) time and date. That's basically it.
 
 ## Areas for improvement
 ### Caching
