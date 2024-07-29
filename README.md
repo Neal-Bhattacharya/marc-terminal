@@ -26,9 +26,9 @@ Running `Trains` without any arguments will print the upcoming trains today:
  04:05 PM----1h------>05:05 PM
  06:00 PM----1h5m---->07:05 PM
 ```
-You can also pass `tmr` (or `tomorrow`), `<weekday>`, or `mm/dd` as arguments to see the trains on that day.
+You can also pass `tomorrow`, a weekday like `sunday` or a date `mm/dd` as arguments to pull up trains on those days.
 
-**This runs entirely offline.** But to open up the mta's live schedules, you can pass `live` or for example `saturday live`.
+**This runs entirely offline.** But to open the mta's live schedules on your browser, you can pass `live` or for example `saturday live`.
 
 To customize stops, emojis, and header, edit options.txt in the files folder.
 
@@ -48,7 +48,7 @@ Open Terminal and type
 
 Drag `run.sh` into the window, then hit enter. Then open `run.sh` with Terminal.
 
-### How to use
+### Recommended use
 
 I find this program most useful if I can just type something like `trains tomorrow` or `trains friday` in Terminal.
 
