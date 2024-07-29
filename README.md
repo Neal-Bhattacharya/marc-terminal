@@ -48,10 +48,7 @@ Open Terminal and type
 
 Drag `run.sh` into the window, then hit enter. Then open `run.sh` with Terminal.
 
-### Run normally
-`java Trains <args>`
-
-### Shortcuts
+### How to use
 
 I find this program most useful if I can just type something like `trains tomorrow` or `trains friday` in Terminal.
 
