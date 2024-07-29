@@ -46,7 +46,7 @@ Open Terminal and type
 
 `chmod +x ` with the space
 
-Drag `run.sh` into the window, then hit enter. Then open `run.sh` with Terminal.
+Drag `run.sh` into the window, then hit enter. Then open `run.sh` with Terminal (you can drag it back into the window and hit enter).
 
 ### Recommended use
 
