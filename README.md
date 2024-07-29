@@ -40,7 +40,7 @@ To customize stops, emojis, and header, edit options.txt in the files folder.
 
 You will need `java 22`. To determine your java version, open up your Terminal and enter `java --version`. Update or install [here](https://www.oracle.com/java/technologies/downloads/).
 
-### Test run
+### Try it out
 
 Open Terminal and type
 
