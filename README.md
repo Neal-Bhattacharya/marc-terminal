@@ -1,5 +1,5 @@
 # marc-terminal
-The next MARC trains, on your terminal.
+The next MARC trains, on your command line.
 
 This program parses [GTFS](https://gtfs.org/) files to find all the departures and arrivals between two stops.
 
